@@ -1,0 +1,45 @@
+
+.header{
+        padding-left: 15px;
+        padding-right: 15px;
+            background: linear-gradient(#EA34DE, #80FFFB);
+            justify-content: center;
+            text-align: center;
+}
+
+.logo{
+    text-align: center;
+    display: contents;
+}
+
+
+.nav-list{
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 100px;
+  
+}
+
+.b-list{
+    padding-bottom: 30px;
+    margin-left: 100px;
+}
+.nav-link {
+   padding-left: 50px;
+
+}
+
+.b-list{
+display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-nav-link{
+margin-left: 400px;
+}
+
+.nav-icon{
+    background-color: aquamarine;
+}

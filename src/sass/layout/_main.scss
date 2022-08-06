@@ -1,0 +1,33 @@
+.shop-categories-wrapper{
+        margin-top: 56px;
+            margin-bottom: 32px;
+}
+.shop-categories{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.shop-category{
+        max-width: 80px;
+            margin: 0 29.2px;
+            white-space: nowrap;
+            text-align: center;
+}
+
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.new-products{
+    display: flex;
+    margin-top: 50px;
+}
+
+.lider-products {
+    display: flex;
+    margin-bottom: 50px;
+}

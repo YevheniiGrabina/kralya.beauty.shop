@@ -1,0 +1,227 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: linear-gradient(#EA34DE, #80FFFB);
+}
+
+.footer__container {
+    
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    
+}
+
+.logo--footer {
+    display: block;
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+.contacts {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+
+
+}
+
+.contacts__item {
+    margin-bottom: 9px;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0px;
+}
+
+.contacts__address {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #000;
+    text-decoration: none;
+}
+
+.contacts__mail {
+    color: #357900;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.71;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: #123456;
+    }
+}
+
+.contacts__tel {
+    color: #357900;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.71;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: #123456;
+    }
+}
+
+.footer-left {
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.social-footer-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+
+
+
+.footer-right__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social__list {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.footer-social__link {
+    display: flex;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: #fff;
+        background-color: #123456;
+    }
+}
+
+.footer-social__list:last-child {
+    margin-right: 0;
+}
+
+.footer-social__icon {
+    fill: #000;
+    transition: fill 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: #000;
+    }
+}
+
+.footer-form {
+    text-align: center;
+
+  
+}
+
+.footer-subscribe__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer-form__input {
+    width: 100%;
+    min-height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    color: #000;
+
+   
+
+    &:hover,
+    &:focus {
+        background: #2f303a;
+    }
+}
+
+.footer-form__button {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 28px;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background: #2196f3;
+    border-color: transparent;
+    color: #000;
+    transition: box-shadow 250ms linear, background-color 250ms linear;
+
+  
+    &:focus,
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: #188ce8;
+    }
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    vertical-align: middle;
+}
