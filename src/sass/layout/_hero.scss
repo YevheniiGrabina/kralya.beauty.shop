@@ -1,4 +1,4 @@
-
+// Категорії
 .shop-categories{
     width: 100%;
     margin-top: 56px;
@@ -24,8 +24,8 @@
 }
 .main-image{
     border-radius: 50px;
-        border: 4px solid crimson;
-        margin-bottom: 10px;
+    border: 4px solid crimson;
+    margin-bottom: 10px;
 }
 
 .shop-category-name{
@@ -35,15 +35,46 @@
 
 .title{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
 }
-
+// Новинки
 .new-products{
-    display: flex;
-    margin-top: 50px;
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+}
+  
+.product-list{
+   display: flex;
 }
 
-.lider-products {
-    display: flex;
-    margin-bottom: 50px;
+.product-item{
+        box-shadow: 1px 1px 2px rgb(0 0 0 / 5%);
+        border: 1px solid;
+    transition: background-color 250ms linear, color 250ms linear, box-shadow 250ms linear;
+margin: 15px;
+width: 300px;
+height: 280px;
 }
+.product-item:focus {
+box-shadow: 1px 1px 2px rgb(0 0 0 / 5%);
+    border: 1px solid;
+    transition: .5s ease;
+}
+.product-info{
+    padding: 6px 6px;
+}
+
+.lider-products{
+    margin-top: 80px;
+        text-align: center;
+        justify-content: center;
+}
+
+.lider-product-list{
+    display: flex;
+}
+
+
+
+

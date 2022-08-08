@@ -1,35 +1,37 @@
 <header class="header">
 <div class="container header-container">
  <nav class="nav">
-      <a class="logo" href="/">
+    <div class="search-container">
+      <button class="nav__logo-btn" href="/">
           <img src="./images/logo.png" alt="Логотип" loading="lazy" height="120px" width="120px" />
-      </a>
-     
-      <input type="search" class="nav-input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
+          <span class="nav__logo-text">Kralya.beauty.shop</span>
+      </button>
 
-     <ul class="nav-list">
-        <li class="nav-item">
-            <a class="nav-link"  href="/">Головна</a>
-        </li>
-         <li class="nav-item">
-            <a  class="nav-link" href="/">Бренди</a>
-        </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/">Контакти</a>
-         </li>
-             <li class="nav-item">
-            <a class="nav-link" href="/">Відгуки</a>
-        </li>
-        </ul>
-        <ul class="basket-list">
-        <li class="basket-item">
-              <a href="/" class="icon-nav-link">
-              <svg class="nav-icon" width="16px" height="16px">
+      <input type="search" class="nav__input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
+       <li class="basket-list__item">
+              <a href="/" class="basket-list__link">
+              <svg class="basket-list__icon" width="16px" height="16px">
                 <use href="./images/icon.svg#icon-shopping-basket"></use>
               </svg>
               Кошик
             </a>
         </li>
+</div>
+<div class="navigation-container">
+     <ul class="nav-list">
+        <li class="nav-list__item">
+            <a class="nav-list__link"  href="/">Головна</a>
+        </li>
+         <li class="nav-list__item">
+            <a  class="nav-list__link" href="/">Бренди</a>
+        </li>
+         <li class="nav-list__item">
+            <a class="nav-list__link" href="/">Контакти</a>
+         </li>
+             <li class="nav-list__item">
+            <a class="nav-list__link" href="/">Відгуки</a>
+        </li>
         </ul>
+        </div>
  </nav>
 </header>

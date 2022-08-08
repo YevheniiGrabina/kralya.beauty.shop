@@ -1,56 +1,84 @@
 .header{
     background-image:linear-gradient(#cc6c7b, #fff6f6);
+    height: 150px;
+}
+.header-container{
+    position: relative;
+}
+
+.search-container{
+    display: flex;
+    height: 50px;
 }
 .nav{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+   justify-content: center;
+   
     
-    
-}
+    &__input {
+            width: 600px;
+            height: 40px;
+            border-radius: 50px;
+            border: 1px solid;
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 130px;
 
+        }
+    &__logo-btn{
+        display: flex;
+        background: transparent;
+        border: none;
+        height: 50px;
+    }
+
+    &__logo-text{
+        font-weight: 900;
+            font-size: 32px;
+            line-height: 1.6;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding-top: 5px;
+            margin-left: 10px;
+    }
+}
+.navigation-container{
+margin-top: 66px;
+margin-left: 135px;
+}
 .nav-list{
     display: flex;
-   
-}
 
-.nav-item{
-    display: inline-flex;
-    padding-top: 58px;
-    padding-bottom: 30px;
-}
 
-.nav-input{
-    width: 450px;
-    height: 50px;
-    margin-top: 45px;
+
+&__link {
+    
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #000000;
     margin-left: 20px;
-    border-radius: 50px;
-    border: 1px solid;
+    
 }
-
+}
 
 .basket-item{
     justify-content: center;
         padding-top: 58px;
-        margin-left: 200px;
-}
+       
 
-.icon-nav-link{
-    font-weight: 700;
-        font-size: 16px;
-        line-height: 1.31;
-        color: #fff6f6;
-}
-.nav-icon{
+
+    &__link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.31;
+            color: #fff6f6;
+            margin-left: 20px;
+    
+        }
+
+    &__icon{
     color: #fff6f6;
 }
-
-.nav-link{
-    font-weight: 700;
-        font-size: 16px;
-        line-height: 1.31;
-        color: #fff6f6;
-    margin-left: 20px;
-
 }
+
+

@@ -1,11 +1,10 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    // background: linear-gradient(#EA34DE, #80FFFB);
+background-image: linear-gradient( #fff6f6 ,#cc6c7b);
 }
 
 .footer__container {
-    
         display: flex;
         align-items: baseline;
         justify-content: space-between;
@@ -15,8 +14,6 @@
 .logo--footer {
     display: block;
     margin-bottom: 20px;
-    font-family: Raleway;
-    font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -24,8 +21,6 @@
 }
 
 .contacts {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
     font-size: 14px;
     color: #000;
     text-decoration: none;
@@ -44,9 +39,6 @@
 }
 
 .contacts__address {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     color: #000;
@@ -55,8 +47,6 @@
 
 .contacts__mail {
     color: #357900;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
@@ -205,7 +195,7 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    background: #2196f3;
+    background: #f3215d;
     border-color: transparent;
     color: #000;
     transition: box-shadow 250ms linear, background-color 250ms linear;
