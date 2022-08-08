@@ -8,6 +8,6 @@
 @import './utils/visually-hidden';
 
 /*Layout*/
-@import './layout/header';
-@import './layout/main';
+@import '../sass/layout/header';
+@import './layout/hero';
 @import './layout/footer';
