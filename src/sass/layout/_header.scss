@@ -1,9 +1,21 @@
 .header{
-    background-image:linear-gradient(#cc6c7b, #fff6f6);
-    height: 220px;
+    background-image: linear-gradient(#cc6c7b, #fff6f6);
+    
 }
 .header-container{
     position: relative;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+            height: 399px;
+            padding: 37px 34px 0px 34px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 1160px;
+        height: 220px;
+            padding: 37px 20px 0px 20px;
+        }
 }
 
 .search-container{
@@ -15,14 +27,28 @@
    
     
     &__input {
-        width: 692px;
-            height: 40px;
-            border: 1px solid;
-            border-radius: 50px;
-            margin-top: 130px;
+       width: 400px;
+    height: 40px;
+        border: 1px solid;
+        border-radius: 50px;
+        position: absolute;
+        margin-top: 130px;
             margin-left: 280px;
-            position: absolute;
 
+            @media screen and (min-width: 768px) {
+                    height: 399px;
+                    padding: 37px 34px 0px 34px;
+                }
+            
+                @media screen and (min-width: 1280px) {
+                width: 692px;
+                    height: 40px;
+                    border: 1px solid;
+                    border-radius: 50px;
+                    margin-top: 130px;
+                    margin-left: 280px;
+                    position: absolute;
+                }
         }
     &__logo-btn{
         display: flex;
