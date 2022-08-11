@@ -3,44 +3,66 @@
     
 }
 .header-container{
-    position: relative;
-    margin: 0 auto;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+        position: relative;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
 
-    @media screen and (min-width: 768px) {
+    }
+   
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             height: 399px;
-            padding: 37px 34px 0px 34px;
+       
         }
     
-        @media screen and (min-width: 1280px) {
+                @media screen and (min-width: 1200px) {
             width: 1160px;
         height: 220px;
-            padding: 37px 20px 0px 20px;
+           
         }
 }
 
 .search-container{
     display: flex;
+    text-align: center;
+    
     // height: 50px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+            
+    
+        }
+    
+        @media screen and (min-width: 1280px) {
+         
+    
+        }
 }
 .nav{
    justify-content: center;
    
     
     &__input {
-       width: 400px;
-    height: 40px;
+        width: 290px;
+        height: 40px;
         border: 1px solid;
         border-radius: 50px;
         position: absolute;
-        margin-top: 130px;
-            margin-left: 280px;
+        margin-top: 145px;
+            margin-left: 55px;
 
             @media screen and (min-width: 768px) {
-                    height: 399px;
-                    padding: 37px 34px 0px 34px;
+                    width: 399px;
+                        height: 40px;
+                        border: 1px solid;
+                        border-radius: 50px;
+                        margin-top: 130px;
+                        margin-left: 280px;
+                        position: absolute;
+                    
                 }
             
-                @media screen and (min-width: 1280px) {
+                @media screen and (min-width: 1200px) {
                 width: 692px;
                     height: 40px;
                     border: 1px solid;
@@ -54,15 +76,12 @@
         display: flex;
         background: transparent;
         border: none;
-        height: 50px;
-        padding-top: 20px;
         
     }
 
     &__logo-text{
         background-image: url(/src/images/kralya.png);
         width: 70%;
-            margin-top: 20px;
             height: 108px;
             position: relative;
             padding-top: 20px;
@@ -74,6 +93,10 @@
 .navigation-container{
 margin-top: 52px;
     margin-left: 437px;
+    display: none;
+    @media screen and (min-width: 768px) {}
+    
+        @media screen and (min-width: 1280px) {}
 }
 .nav-list{
     display: flex;
