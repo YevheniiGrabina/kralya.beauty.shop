@@ -1,13 +1,16 @@
 <header class="header">
-<div class="header-container">
- <nav class="nav">
-    <div class="search-container">
-      <button class="nav__logo-btn" href="/">
-          <img src="./images/logo.png" alt="Логотип" loading="lazy" height="200px" width="200px" />
-           </button>
-      <input type="search" class="nav__input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
-       <a src="/src/images/kralya.png" alt="name" class="nav__logo-text"></a> 
-       <ul>
+<div class="header-container container">
+    <div class="search-section">
+      <a href="/">
+          <img src="./images/logo.png" alt="Логотип" loading="lazy" class="logo-img"/>
+      </a>
+       <a src="/src/images/kralya.png" alt="name" class="nav-logo-text" width="20px" height="20px"></a> 
+    </div>
+       <div class="input-section">
+      <input type="search" class="input-section__input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
+       </div>
+<div class="basket">
+       <ul class="basket-list">
        <li class="basket-list__item">
               <a href="/" class="basket-list__link">
               <svg class="basket-list__icon" width="20px" height="20px">
@@ -17,7 +20,7 @@
         </li>
         </ul> 
 </div>
-<div class="navigation-container">
+<div class="nav-section">
      <ul class="nav-list">
         <li class="nav-list__item">
             <a class="nav-list__link"  href="/">Головна</a>
@@ -33,6 +36,10 @@
         </li>
         </ul>
         </div>
- </nav>
+         <button class="burger" data-menu-open type="button">
+          <svg class="burger__icon" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
  </div>
 </header>
