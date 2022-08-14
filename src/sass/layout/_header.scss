@@ -94,8 +94,58 @@ display: none;
         padding: 0;
         line-height: 0;
 
-        &__icon{
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+       .burger__icon{
             width: 40px;
             height: 40px;
         }
+
+
+.mobile-menu{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 48px 40px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+background-color: #fff;
+        transition: visibility 250ms linear, opacity 250ms linear;
+        
+            @media screen and (min-width: 767px) {
+                display: none;
+            }
+        }
+.mobile-menu.is-open {
+ opacity: 1;
+visibility: visible;
+ pointer-events: all;
+ }
+
+ .close {
+  position: absolute;
+  top: 10px;
+right: 66px;
+ 
+ border: none;
+ cursor: pointer;
+padding: 0;
+line-height: 0;
+ }
+
+.close__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
 }
+
