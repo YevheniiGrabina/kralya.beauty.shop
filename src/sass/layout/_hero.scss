@@ -3,17 +3,21 @@
     width: 100%;
     margin-top: 56px;
     margin-bottom: 32px;
-    box-sizing: border-box;
-    text-align: center;
-    justify-content: center;
 
-   
 }
 
 .shop-category{
-            text-align: center;
+                text-align: center;
                 justify-content: center;
                 align-items: center;
+
+                @media screen and (min-width: 767px) {
+                        display: flex;
+                    }
+                
+                    @media screen and (min-width: 1200px) {
+                        display: flex;
+                    }
 
             &__btn {
                     border: none;
@@ -28,8 +32,10 @@
                     flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
-                    column-gap: 15px;
-        
+                    column-gap: 60px;
+
+                   
+
                 }
                 &__item{
                     margin-bottom: 10px;
