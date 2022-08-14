@@ -26,13 +26,17 @@
 }
 .input-section{
 display: none;
+
+
 @media screen and (min-width: 767px) {
-        
+        display: none;
     }
 
     @media screen and (min-width: 1200px) {
 
     }
+
+
 
     &__input {
        
