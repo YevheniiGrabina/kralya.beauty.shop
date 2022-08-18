@@ -3,84 +3,89 @@
   
     
 }
-.header-container {
+.header .container {
     display: flex;
-    justify-content: space-between;
-}
-// .search-section{
+    align-items: center;
+    
 
-// }
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+    }
+  }
+
+
 .logo-img{
    width: 70px;
    height: 70px; 
+
+   @media screen and (min-width: 768px) {
+    width: 120px;
+   height: 120px; 
 }
 
-.nav-logo-text{
-        width: 70%;
-        height: 108px;
-        padding-top: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 118px;
+
 }
+
 .input-section{
-display: none;
+margin-left: 15px;
+padding-top: 37px;
 
 
-@media screen and (min-width: 767px) {
+
+@media screen and (max-width: 767px) {
         display: none;
     }
 
+    @media screen and (max-width: 1200px) {
+
+    }
+
+}
+.input-section__input{
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+   
+    @media screen and (max-width: 1199px) {
+        width: 450px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid;
+    }
+
     @media screen and (min-width: 1200px) {
-
+        width: 700px;
+        height: 30px;
+        border-radius: 30px;
+        border: 1px solid;
     }
 
-
-
-    &__input {
-       
-
-           
-    // &__logo-btn{
-      
-        
-    // }
-
-    &__logo-text{
-        background-image: url(/src/images/kralya.png);
-        width: 70%;
-            height: 119px;
-          
-    }
 }
+.nav{
+    margin-top: 20px;
 }
-
-
 .nav-list{
     display: flex;
+   
+}
 
-
-
-// &__link {
-    
-
-    
-// }
+.nav-list__item{
+    margin-right: 10px;
 }
 
 .basket{
-    display: none;
+margin-left: 120px;
 
 
-    // &__link {
-           
-    
-    //     }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
-//     &__icon{
-    
-// }
+    @media screen and (max-width: 1200px) {
+
+    }
+
 }
 
 .nav-section{
@@ -149,3 +154,6 @@ line-height: 0;
   color: #000;
 }
 
+// @media (min-width: 768px) and (max-width: 1199px) {
+//     margin-left: 88px;
+//   }

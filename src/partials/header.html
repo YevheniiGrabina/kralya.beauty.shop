@@ -1,68 +1,65 @@
 <header class="header">
-<div class="header-container container">
-    <div class="search-section">
-      <a href="/">
-          <img src="./images/logo.png" alt="Логотип" loading="lazy" class="logo-img"/>
-      </a>
-       <a src="/src/images/kralya.png" alt="name" class="nav-logo-text" width="20px" height="20px"></a> 
-    </div>
-       <div class="input-section">
-      <input type="search" class="input-section__input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
-       </div>
-<div class="basket">
-       <ul class="basket-list">
-       <li class="basket-list__item">
-              <a href="/" class="basket-list__link">
-              <svg class="basket-list__icon" width="20px" height="20px">
-                <use href="./images/icon.svg#icon-shopping-basket"></use>
-              </svg>
-            </a>
-        </li>
-        </ul> 
-</div>
-<div class="nav-section">
-     <ul class="nav-list">
-        <li class="nav-list__item">
-            <a class="nav-list__link"  href="/">Головна</a>
-        </li>
-         <li class="nav-list__item">
-            <a  class="nav-list__link" href="/">Бренди</a>
-        </li>
-         <li class="nav-list__item">
-            <a class="nav-list__link" href="/">Контакти</a>
-         </li>
-             <li class="nav-list__item">
-            <a class="nav-list__link" href="/">Відгуки</a>
-        </li>
-        </ul>
+  <div class="container">
+        <a href="/">
+            <img src="./images/logo.png" alt="Логотип" type="button" loading="lazy" class="logo-img"/>
+        </a>
+         <div class="input-section">
+        <input type="search" class="input-section__input" placeholder="Шукайте парфуми, косметику, бренд..." value="">
+        <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+              <a class="nav-list__link"  href="/">Головна</a>
+          </li>
+           <li class="nav-list__item">
+              <a  class="nav-list__link" href="/">Бренди</a>
+          </li>
+           <li class="nav-list__item">
+              <a class="nav-list__link" href="/">Контакти</a>
+           </li>
+               <li class="nav-list__item">
+              <a class="nav-list__link" href="/">Відгуки</a>
+          </li>
+          </ul>
         </div>
-         <button class="burger" data-menu-open type="button">
-          <svg class="burger__icon" width="16px" height="16px">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-          <div class="mobile-menu" data-menu>
-          <button type="button" class="close" data-menu-close>
-            <svg class="close__icon">
-              <use href="./images/icons.svg#icon-close_menu"></use>
+         </div>
+  <div class="basket">
+         <ul class="basket-list">
+         <li class="basket-list__item">
+                <a href="/" class="basket-list__link">
+                <svg class="basket-list__icon" width="25px" height="25px">
+                  <use href="./images/icon.svg#icon-shopping-basket"></use>
+                </svg>
+              </a>
+          </li>
+          </ul> 
+  </div>
+           <button class="burger" data-menu-open type="button">
+            <svg class="burger__icon" width="16px" height="16px">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-          <ul class="mobile-nav">
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link--current" href="/"
-                >Головна</a
-              >
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="/">Бренди</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="">Контакти</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a class="mobile-nav__link" href="">Відгуки</a>
-            </li>
-          </ul>
-          </div>
- </div>
-</header>
+            <div class="mobile-menu" data-menu>
+            <button type="button" class="close" data-menu-close>
+              <svg class="close__icon">
+                <use href="./images/icons.svg#icon-close_menu"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link--current" href="/"
+                  >Головна</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="/">Бренди</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="">Контакти</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="">Відгуки</a>
+              </li>
+            </ul>
+            </div>
+   </div>
+  </header>
