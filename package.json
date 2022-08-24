@@ -21,7 +21,8 @@
     "@parcel/transformer-sass": "^2.6.0",
     "modern-normalize": "^1.1.0",
     "parsel": "^0.3.0",
-    "sass": "^1.54.4"
+    "sass": "^1.54.4",
+    "slider": "^1.0.4"
   },
   "devDependencies": {
     "parcel": "^2.6.0",
