@@ -28,9 +28,9 @@
 то нужно задать им pointer-events: none,
 чтобы они не перетаскивались мышью */
 
-// .slider-list {
-//   overflow: hidden;
-// }
+.slider-list {
+  overflow: hidden;
+}
 
 .slider-list.grab {
   cursor: grab;
