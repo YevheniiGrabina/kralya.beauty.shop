@@ -6,6 +6,7 @@
   .slider__wrapper{
     text-align: center;
     justify-content: center;
+    overflow: hidden;
   }
   
   .slider__container {
@@ -29,7 +30,7 @@
   
   .slider__control {
     position: absolute;
-    top: 20%;
+    top: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
