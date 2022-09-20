@@ -1,35 +1,55 @@
 .header{
     background-image: linear-gradient(#cc6c7b, #fff6f6);
-    
   
     
 }
 .header .container {
-    display: flex;
     align-items: center;
+    min-height: 230px;
+    display: flex;
     
 
     @media screen and (max-width: 767px) {
         justify-content: space-between;
     }
   }
-
+.logo{
+    display: flex;
+}
 
 .logo-img{
-   min-width: 70px;
+   min-width: 200px;
    height: 70px; 
 
    @media screen and (min-width: 768px) {
-    width: 120px;
-   height: 120px; 
+    width: 200px;
+   height: 200px; 
+}
 }
 
+.logo-text{
+    position: absolute;
+    height: 110px;
+    width: 690px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0;
+    margin-left: 275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
+.form{
+margin-top: 80px;
 }
 
 .input-section{
-margin-left: 15px;
-padding-top: 37px;
+margin-left: 50px;
+
+
+
 
 
 
@@ -43,6 +63,7 @@ padding-top: 37px;
 
 }
 .input-section__input{
+    
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -56,23 +77,43 @@ padding-top: 37px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 700px;
+        width: 795px;
         height: 30px;
         border-radius: 30px;
         border: 1px solid;
     }
 
 }
-.nav{
-    margin-top: 20px;
-}
+
+.form__btn {
+    margin-left: -30px;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+    transition: transform linear 200ms;
+  background: transparent;
+  border: none;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+  
+  .nav{
+    position: absolute;
+    top: 200px;
+    left: 300px;
+  }
+
 .nav-list{
     display: flex;
+    // margin-top: 80px;
+   
+ 
    
 }
 
 .nav-list__item{
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .nav-list__link{
@@ -83,7 +124,8 @@ padding-top: 37px;
 }
 
 .basket-item{
-margin-left: 120px;
+margin-left: 50px;
+margin-top: 80px;
 
 
     @media screen and (max-width: 767px) {
@@ -98,6 +140,17 @@ margin-left: 120px;
 .basket{
     background: transparent;
     border: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.basket-text{
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
 }
 .nav-section{
     display: none;
