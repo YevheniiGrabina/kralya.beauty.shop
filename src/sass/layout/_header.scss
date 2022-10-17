@@ -5,7 +5,7 @@
 }
 .header .container {
     align-items: center;
-    min-height: 230px;
+    min-height: 110px;
     display: flex;
     
 
@@ -18,7 +18,7 @@
 }
 
 .logo-img{
-   min-width: 200px;
+   min-width: 70px;
    height: 70px; 
 
    @media screen and (min-width: 768px) {
@@ -39,6 +39,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .form{
@@ -47,10 +51,6 @@ margin-top: 80px;
 
 .input-section{
 margin-left: 50px;
-
-
-
-
 
 
 @media screen and (max-width: 767px) {
@@ -102,6 +102,10 @@ margin-left: 50px;
     position: absolute;
     top: 200px;
     left: 300px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
   }
 
 .nav-list{
