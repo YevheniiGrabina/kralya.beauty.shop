@@ -1,41 +1,29 @@
 .header{
-    background-image: linear-gradient(#cc6c7b, #fff6f6);
-  
-    
+    background: #fff;
+    border: none;
+    border-radius: 25px 25px 0px 0px;
 }
 .header .container {
+    text-align: center;
     align-items: center;
-    min-height: 110px;
-    display: flex;
-    
-
+    height: 110px;
     @media screen and (max-width: 767px) {
         justify-content: space-between;
     }
   }
-.logo{
-    display: flex;
-}
-
 .logo-img{
-   min-width: 70px;
-   height: 70px; 
-
+   min-width: 90px;
+   height: 90px; 
+   margin-left: 50px;
+  
    @media screen and (min-width: 768px) {
-    width: 200px;
-   height: 200px; 
+    width: 50px;
 }
 }
 
 .logo-text{
-    position: absolute;
-    height: 110px;
-    width: 690px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    font-size: 0;
-    margin-left: 275px;
+    height: 60px;
+    width: 370px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -45,92 +33,50 @@
     }
 }
 
-.form{
-margin-top: 80px;
-}
-
-.input-section{
-margin-left: 50px;
-
-
-@media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 1200px) {
-
-    }
-
-}
-.input-section__input{
-    
-
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-   
-    @media screen and (max-width: 1199px) {
-        width: 450px;
-        height: 30px;
-        border-radius: 30px;
-        border: 1px solid;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 795px;
-        height: 30px;
-        border-radius: 30px;
-        border: 1px solid;
-    }
-
-}
-
-.form__btn {
-    margin-left: -30px;
-    right: 0;
-    text-align: center;
-    justify-content: center;
-    transition: transform linear 200ms;
-  background: transparent;
-  border: none;
-    &:hover {
-      transform: scale(1.15);
-    }
-  }
-  
-  .nav{
-    position: absolute;
-    top: 200px;
-    left: 300px;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-  }
-
 .nav-list{
     display: flex;
-    // margin-top: 80px;
-   
- 
-   
+   line-height: 21px;
+   text-align: center;
+   letter-spacing: 1.7px;
+   text-transform: uppercase;
 }
 
 .nav-list__item{
     margin-right: 50px;
+    padding-top: 50px;
+    justify-content: center;
 }
-
+.contact-nav__item{
+    padding-top: 50px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+   
+}
+.contact-nav-text{
+    margin-right: 12px;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.29;
+    text-transform: uppercase;
+}
+.tel{
+    color: #000;
+    text-transform: uppercase;
+   
+}
 .nav-list__link{
     color: #000;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.29;
+    text-transform: uppercase;
 }
 
 .basket-item{
 margin-left: 50px;
 margin-top: 80px;
-
 
     @media screen and (max-width: 767px) {
         display: none;
