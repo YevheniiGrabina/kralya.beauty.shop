@@ -1,5 +1,5 @@
 .header{
-    height: 185px;
+    height: 210px;
     border-radius: 25px 25px 0px 0px;
     // border:  3px solid #ffffff;
     padding: 0 34px;
@@ -32,6 +32,11 @@
     line-height: 1.29;
     text-transform: uppercase;
 }
+.contact-btn{
+    border-radius: 10px;
+     border: 2px solid #ffffff;
+     background-color: rgb(255, 225, 235);
+}
 
 // logo
   .logo{
@@ -50,6 +55,7 @@
    min-width: 100px;
    height: 100px; 
    margin: 0 auto;
+   border-radius: 10px;
   
    @media screen and (min-width: 768px) {
     width: 50px;
@@ -84,7 +90,7 @@
 vertical-align: middle;
 height: 30px;
 border-bottom: 1px #cc6c7b;
-background-color: #fff6f6;
+// background-color: #fff6f6;
 
 }
 .nav-list{
@@ -137,6 +143,16 @@ background-color: #fff6f6;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+}
+.input-section__input{
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    
+}
+.form__btn{
+    border-radius: 10px;
+     border: 2px solid #ffffff;
+     background-color: rgb(255, 225, 235);
 }
 .nav-section{
     display: none;
@@ -228,3 +244,13 @@ line-height: 0;
 // @media (min-width: 768px) and (max-width: 1199px) {
 //     margin-left: 88px;
 //   }
+
+.select{
+    background: transparent;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.29;
+}
