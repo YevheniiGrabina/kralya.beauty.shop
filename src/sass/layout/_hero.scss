@@ -53,7 +53,7 @@
                         margin-bottom: 10px;
                         align-items: center;
                         justify-content: center;
-                        margin: 34px;
+                        margin: 20px;
         
                     @media (min-width: 768px) and (max-width: 1199px) {
                    text-align: center;
@@ -77,42 +77,13 @@
            }     
 
 
-.main-images1{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #ff0051;
+.main-images{
+    height: 150px;
+    min-width: 150px;
+    border-radius: 10px;
+    border: 8px solid #ffffff;
 }
-.main-images2{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #eaff00;
-}
-.main-images3{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #cc00ff;
-}
-.main-images4{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #00fff7;
-}
-.main-images5{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #d4ff00;
-}
-.main-images6{
-    height: 120px;
-    min-width: 120px;
-    border-radius: 100px;
-    border: 2px solid #ff6600;
-}
+
 
 .shop-category__name{
     margin-top: 20px;
@@ -151,7 +122,8 @@ padding-top: 50px;
       }
 }
 .nev-shop-item{
-    border: 1px solid #eeeeee;
+    border: 8px solid #ffffff;
+    border-radius: 10px;
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -239,7 +211,7 @@ line-height: 10px;
 
 .sale-btn{
    width: 171px;
-   background: #DA2A52;
+   background: #bd5555;
    border-radius: 55px;
    font-weight: 500;
     font-size: 16px;
