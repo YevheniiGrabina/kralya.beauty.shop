@@ -22,7 +22,9 @@
   .contact-item{
     margin: 0 0 16px;
     justify-content: center;
-   
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 .contact-text{
     margin-right: 12px;
@@ -91,7 +93,9 @@ vertical-align: middle;
 height: 30px;
 border-bottom: 1px #cc6c7b;
 // background-color: #fff6f6;
-
+@media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 .nav-list{
     padding: 0 4px 0 2px;
@@ -119,16 +123,7 @@ border-bottom: 1px #cc6c7b;
 }
 
 .basket-item{
-    margin: 0 0 16px;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 1200px) {
-
-    }
-
+    margin-top: 16px;
 }
 .basket{
     background: transparent;
@@ -147,23 +142,32 @@ border-bottom: 1px #cc6c7b;
 .input-section__input{
     border-radius: 10px;
     border: 5px solid #ffffff;
-    
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
 }
 .form__btn{
     border-radius: 10px;
      border: 2px solid #ffffff;
      background-color: rgb(255, 225, 235);
+     position: absolute;
+     margin-left: -360px;
+     margin-top: -30px;
 }
 .nav-section{
     display: none;
 }
 
 .burger{
-    background-color: transparent;
+        background-color: transparent;
         border: none;
         cursor: pointer;
         padding: 0;
         line-height: 0;
+        position: absolute;
+        margin-left: -275px;
+        margin-top: 35px;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -172,6 +176,7 @@ border-bottom: 1px #cc6c7b;
        .burger__icon{
             width: 40px;
             height: 40px;
+            
         }
 
 
@@ -254,3 +259,4 @@ line-height: 0;
     font-weight: 700;
     line-height: 1.29;
 }
+
