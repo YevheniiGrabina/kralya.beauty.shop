@@ -31,16 +31,16 @@
                 .shop-category__list{
                     display: flex;
 
-                    @media screen and (max-width: 767px) {
+                    @media  (min-width: 320px) and (max-width: 767px) {
                         flex-wrap: wrap;
-                          margin: 20px;
+                          margin: 30px;
+                        
                     }
                    
                     @media (min-width: 768px) and (max-width: 1199px) {
-                        flex-wrap: wrap;
-                          margin: -15px;
+                      display: flex;
                  
-                    
+                    flex-wrap: nowrap;
                     }
                    
                     @media screen and (min-width: 1200px) {
@@ -54,7 +54,11 @@
                         align-items: center;
                         justify-content: center;
                         margin: 20px;
-        
+          @media (min-width: 320px) and (max-width: 767px) {
+              text-align: center;
+                justify-content: center;
+                flex-basis: calc((100% - 180px) / 2);
+            }
                     @media (min-width: 768px) and (max-width: 1199px) {
                    text-align: center;
                    justify-content: center;
@@ -79,9 +83,16 @@
 
 .main-images{
     height: 150px;
-    min-width: 150px;
-    border-radius: 10px;
-    border: 5px solid #ffffff;
+      min-width: 150px;
+      border-radius: 10px;
+      border: 5px solid #ffffff;
+  @media (min-width: 320px) and (max-width: 767px) {
+      height: 100px;
+        min-width: 100px;
+        border-radius: 10px;
+        border: 5px solid #ffffff;
+    }
+   
 }
 
 
@@ -128,8 +139,9 @@ display: flex;
     margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
-      width: 210px;
-      margin-right: 15px;
+      width: 177px;
+      height: auto;
+      margin-right: 5px;
     }
 
     @media screen and (min-width: 768px) {
@@ -155,13 +167,13 @@ display: flex;
 }
 .product-name{
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
 }
 .product-subname{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.9;
 }
 
