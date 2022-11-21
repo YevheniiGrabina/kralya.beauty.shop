@@ -1,20 +1,26 @@
 
 .sw-container {
-  margin: 0 auto;
+ 
   height: 100%;
-  padding: 0 4em;
+  padding: 0 70px;
   overflow: hidden;
+  @media screen and (min-width: $desktop) {
+    padding: 0 0px;
+    }
+  
 }
 
 .slider-wrap {
   overflow: hidden;
   height: 100%;
   width: 100%;
-  
+    @media screen and (min-width: $tablet) {
+        display: none;
+      }
 }
 
 .swiper-container {
-  width: 100%;
+  width: 93%;
   height: 100%;
 }
 
@@ -23,7 +29,9 @@
   font-size: 18px;
   opacity: 0;
 }
-
+.swiper-slide {
+  opacity: .25;
+}
 .swiper-container {
   overflow: visible;
 }
@@ -33,5 +41,5 @@
 }
 .swiper-button-prev,
 .swiper-button-next{
-  margin-top: 35px;
+  margin-top: 1px;
 }

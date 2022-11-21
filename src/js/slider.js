@@ -9,13 +9,13 @@ new Swiper('.swiper-container', {
         watchSlidesVisibility: true,
         breakpoints: {
  
-            1028: {
+            768: {
                 slidesPerView:3,
                 spaceBetween: 30,
             },
             480: {
-                slidesPerView:3,
-                spaceBetween: 10,
+                slidesPerView:6,
+                spaceBetween: 20,
             }
         }
     });
