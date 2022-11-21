@@ -1,8 +1,5 @@
 import './sass/main.scss';
-import './js/mobileMenu';
-import './js/modal';
-import './js/catalog.js';
-import './js/products.js'
+
 
 
 
