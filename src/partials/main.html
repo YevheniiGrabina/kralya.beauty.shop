@@ -1,9 +1,9 @@
 <main class="main container">
-
   <!-- Категорії -->
-  <div class="shop-categories ">
-    <ul class="shop-category__list">
-    <li class="shop-category__item ">
+  <div class="sw-container">
+  <div class="shop-categories swiper-container ">
+    <ul class="shop-category__list swiper-wrapper">
+    <li class="shop-category__item swiper-slide">
     <button class="shop-category__btn  nav__btn--currently face js-nav-face-btn">
       <a class="shop-category__link" >
         <img src="/src/images/face.jpg" alt="#"  class="main-images" />
@@ -12,8 +12,8 @@
     </a>
     </button>
     </li>
-    <li class="shop-category__item ">
-    <button class="shop-category__btn">
+    <li class="shop-category__item swiper-slide">
+    <button class="shop-category__btn js-nav-body-btn body">
       <a class="shop-category__link" >
         <img src="/src/images/body.jpg" alt="#"   class="main-images"/>
       <p class="shop-category__name"> Тіло
@@ -21,8 +21,8 @@
     </a>
     </button>
     </li>
-    <li class="shop-category__item ">
-    <button class="shop-category__btn">
+    <li class="shop-category__item swiper-slide">
+    <button class="shop-category__btn js-nav-lips-btn lips">
       <a class="shop-category__link" >
          <img src="/src/images/lips.jpg" alt="#"  class="main-images" />
       <p class="shop-category__name"> Губи
@@ -30,8 +30,8 @@
     </a>
     </button>
     </li>
-    <li class="shop-category__item ">
-    <button class="shop-category__btn">
+    <li class="shop-category__item swiper-slide">
+    <button class="shop-category__btn js-nav-hair-btn hair">
       <a class="shop-category__link" >
         <img src="/src/images/hair.jpg" alt="#"   class="main-images"/>
       <p class="shop-category__name"> Волосся
@@ -39,8 +39,8 @@
     </a>
     </button>
     </li>
-    <li class="shop-category__item ">
-    <button class="shop-category__btn">
+    <li class="shop-category__item swiper-slide">
+    <button class="shop-category__btn js-nav-box-btn box">
       <a class="shop-category__link" >
          <img src="/src/images/box.jpg" alt="#"  class="main-images" />
       <p class="shop-category__name"> Бокси
@@ -48,8 +48,8 @@
     </a>
     </button>
     </li>
-    <li class="shop-category__item ">
-    <button class="shop-category__btn">
+    <li class="shop-category__item swiper-slide">
+    <button class="shop-category__btn js-nav-gifts-btn gifts">
       <a class="shop-category__link" >
          <img src="/src/images/gifts.jpg" alt="#"  class="main-images"/>
       <p class="shop-category__name"> Сертифікати
@@ -59,14 +59,19 @@
     </li>
     </ul>
 </div>
+ <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
+</div>
+    </div>
+  </div>
   </div>
   <!-- Перехід по категоріям -->
 </div>
-<h1 class="title">Популярні товари</h1>
-  <div class="new-shop-category ">
+<h1 class="title lider-title">Популярні товари</h1>
+  <div class="new-shop-category">
     <ul class="new-product-list">
-      <li class="nev-shop-item">
+      <li class="new-shop-item">
         <div>
          <a href="/">
              <img src="/src/images/nofound.png" alt="#" >
@@ -81,7 +86,7 @@
               
          </div>
      </li>
-     <li class="nev-shop-item">
+     <li class="new-shop-item">
       <a href="/">
           <img src="/src/images/nofound.png" alt="#" >
           </a>
@@ -91,7 +96,7 @@
             <p class="product-price">666.66</p>
            <button class="sale-btn">Додати у кошик</button>
       </div>
-  </li> <li class="nev-shop-item">
+  </li> <li class="new-shop-item">
     <a href="/">
         <img src="/src/images/nofound.png" alt="#" >
         </a>
@@ -101,7 +106,7 @@
           <p class="product-price">666.66</p>
          <button class="sale-btn" type="button">Додати у кошик</button>
     </div>
-</li> <li class="nev-shop-item">
+</li> <li class="new-shop-item">
   <a href="/">
       <img src="/src/images/nofound.png" alt="#" >
       </a>
@@ -111,7 +116,7 @@
         <p class="product-price">666.66</p>
        <button class="sale-btn" type="button">Додати у кошик</button>
   </div>
-</li> <li class="nev-shop-item">
+</li> <li class="new-shop-item">
   <a href="/">
       <img src="/src/images/nofound.png" alt="#" >
       </a>
@@ -126,16 +131,16 @@
  </li>
     </ul>
   </div>
-  <div class="callback ">
+  <div class="callback-section">
     <h2 class="callback-title">НЕ ЗНАЄШ ШО ОБРАТИ?</h2>
     <P class="callback-text">Залишай заявку прямо зараз і ми допоможемо Вам
     </p>
     <button class="callback-btn">Зворотній дзвінок</button>
   </div>   
-  <h1 class="title">Новинки</h1>  
-  <div class="new-shop-category ">
+  <h1 class="title new-title">Новинки</h1>  
+  <div class="new-shop-category news">
     <ul class="new-product-list">
-      <li class="nev-shop-item">
+      <li class="new-shop-item">
         <div>
          <a href="/">
              <img src="/src/images/nofound.png" alt="#" >
@@ -150,7 +155,7 @@
               
          </div>
      </li>
-     <li class="nev-shop-item">
+     <li class="new-shop-item">
       <a href="/">
           <img src="/src/images/nofound.png" alt="#" >
           </a>
@@ -160,7 +165,7 @@
             <p class="product-price">666.66</p>
            <button class="sale-btn">Додати у кошик</button>
       </div>
-  </li> <li class="nev-shop-item">
+  </li> <li class="new-shop-item">
     <a href="/">
         <img src="/src/images/nofound.png" alt="#" >
         </a>
@@ -170,7 +175,7 @@
           <p class="product-price">666.66</p>
          <button class="sale-btn" type="button">Додати у кошик</button>
     </div>
-</li> <li class="nev-shop-item">
+</li> <li class="new-shop-item">
   <a href="/">
       <img src="/src/images/nofound.png" alt="#" >
       </a>
@@ -180,7 +185,7 @@
         <p class="product-price">666.66</p>
        <button class="sale-btn" type="button">Додати у кошик</button>
   </div>
-</li> <li class="nev-shop-item">
+</li> <li class="new-shop-item">
   <a href="/">
       <img src="/src/images/nofound.png" alt="#" >
       </a>
@@ -197,72 +202,5 @@
   </div>
   <!-- Перехід по категоріям -->
   <!-- Обличчя -->
-   <div class="for-face visually-hidden">
-     <div class="new-products">
-      <h1 class="title">Для обличчя</h1>
-  <ul class="product-list">
-    <li class="nev-shop-item">
-        <a href="/">
-            <img src="/src/images/nofound.png" alt="#" >
-            </a>
-            <div class="product-info">
-            <h2 class="product-name">Бренд</h2>
-             <p class="product-subname">Назва продукту</p>
-             <span class="product-price">ціна</span>
-        </div>
-    </li>
-     <li class="nev-shop-item">
-        <a href="/">
-            <img src="/src/images/nofound.png" alt="#" >
-            </a>
-              <div class="product-info">
-            <h2 class="product-name">Бренд</h2>
-             <p class="product-subname">Назва продукту</p>
-             <span class="product-price">ціна</span>
-        </div>
-    </li>
-  
-    <li class="nev-shop-item">
-        <a href="/">
-            <img src="/src/images/nofound.png" alt="#" >
-            </a>
-             <div class="product-info">
-            <h2 class="product-name">Бренд</h2>
-             <p class="product-subname">Назва продукту</p>
-             <span class="product-price">ціна</span>
-        </div>
-    </li>
- 
-   <li class="nev-shop-item">
-        <a href="/">
-            <img src="/src/images/nofound.png" alt="#" >
-            </a>
-             <div class="product-info">
-            <h2 class="product-name">Бренд</h2>
-             <p class="product-subname">Назва продукту</p>
-             <span class="product-price">ціна</span>
-        </div>
-    </li>
-  </ul>
-   </div> 
-   <div class="info">
-    <h1 class="title">Контакти</h1>
-    <div>
-      <h2>Адреса</h2>
-      <p>М.Дніпро</p>
-    </div>
-    <div>
-      <h2>Номер Телефона</h2>
-      <p>+380685440433</p>
-      <a href="https://www.instagram.com/kralya.beauty.shop/" class="footer-social__link">
-        <svg class="footer-social__icon" width="20" height="20">
-          <use href="./images/icons.svg#icon-instagram"></use>
-        </svg>
-      </a>
-    </div>
-    <div>
-      <h2>Графік роботи</h2>
-      <p>Щодня з 9-00 до 20-00</p>
-    </div>
        </div>
 </main>
