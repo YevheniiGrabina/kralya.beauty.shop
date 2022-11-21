@@ -3,7 +3,7 @@ import { refs } from './refs';
 refs.hair.addEventListener('click', onHairBtnClick);
 
 
-function onHairBtnClick() {
+export function onHairBtnClick() {
     refs.shopSection.classList.add('visually-hidden');
     refs.newSection.classList.add('visually-hidden');
     refs.newTitle.classList.add('visually-hidden');

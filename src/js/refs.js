@@ -26,7 +26,6 @@ export const refs = {
     box: document.querySelector('.js-nav-box-btn'),
     gifts: document.querySelector('.js-nav-gifts-btn'),
        
-     
-
-    
 }
+
+
