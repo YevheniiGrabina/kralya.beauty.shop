@@ -4,7 +4,14 @@
     margin-top: 56px;
 }
 
-                .shop-category__list{
+               
+.shop-category__list ,
+.for-body-list,
+.for-hair-list,
+.for-lips-list,
+.box-list,
+.gifts-list,
+.for-face-list{
                     display: flex;
                     
                       @media screen and (max-width: 767px) {
@@ -86,6 +93,7 @@
 .title{
     margin-left: 30px;
     margin-top: 60px;
+    margin-bottom: 60px;
     &::after {
         content: "";
         width: 50%;
@@ -97,9 +105,9 @@
       }
 }
 // Популярні
-.new-shop-category{
-padding-top: 50px;
-padding-bottom: 50px;
+
+.new-products{
+  margin-top: 50px;
 }
 .new-product-list{
 display: flex;
