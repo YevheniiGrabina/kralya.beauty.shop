@@ -15,14 +15,14 @@ import './js/slider.js';
     import { onLipsBtnClick } from './js/renderLipsCategory';
 
 
-
+    refs.face.addEventListener('click', onFaceBtnClick);
+    refs.body.addEventListener('click', onBodyBtnClick);
+    refs.lips.addEventListener('click', onLipsBtnClick);
     refs.hair.addEventListener('click', onHairBtnClick);
     refs.box.addEventListener('click', onBoxBtnClick);
     refs.gifts.addEventListener('click', onGiftsBtnClick);
 
-    refs.face.addEventListener('click', onFaceBtnClick);
-    refs.body.addEventListener('click', onBodyBtnClick);
-    refs.lips.addEventListener('click', onLipsBtnClick);
+    
 
 
 

@@ -3,7 +3,7 @@ import { refs } from './refs';
 refs.box.addEventListener('click', onBoxBtnClick);
 
 
-function onBoxBtnClick() {
+export function onBoxBtnClick() {
     refs.shopSection.classList.add('visually-hidden');
     refs.newSection.classList.add('visually-hidden');
     refs.newTitle.classList.add('visually-hidden');
