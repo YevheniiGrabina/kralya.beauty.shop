@@ -1,0 +1,40 @@
+.slider-container{
+margin-top: 50px;
+@media screen and (min-width: 320px) {
+      
+    }
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1240px;
+    }
+}
+.swiper-slide{
+    flex-shrink: 1;
+}
+
+
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -30px;
+}
+.swiper-button-prev{
+    position: fixed;
+    left: -60px;
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+.swiper-button-next{
+    position: fixed;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.image-slider .swiper-button-prev:after,
+.image-slider .swiper-button-next:after{
+    color: #a22455;
+}

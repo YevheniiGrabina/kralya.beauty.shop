@@ -4,7 +4,7 @@ export const refs = {
     logo: document.querySelector('.js-logo-btn'),
     formEl: document.querySelector('.form'),
     formInputEl: document.querySelector('.form__input'),
-    shopSection: document.querySelector('.shop-categories '),
+    shopSection: document.querySelector('.slider-container'),
     newSection: document.querySelector('.new-shop-category'),
     liderSection: document.querySelector('.lider-shop-category'),
     face: document.querySelector('.js-nav-face-btn'),
