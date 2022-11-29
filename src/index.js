@@ -2,6 +2,7 @@ import './sass/main.scss';
 import './js/modal.js';
 import './js/mobile-menu';
 import './js/slider.js';
+import './js/products';
 
 
     import { refs } from './js/refs';
@@ -13,6 +14,7 @@ import './js/slider.js';
     import { onFaceBtnClick } from './js/renderFaceCategory';
     import { onBodyBtnClick } from './js/renderBodyCategory';
     import { onLipsBtnClick } from './js/renderLipsCategory';
+    
 
 
     refs.face.addEventListener('click', onFaceBtnClick);

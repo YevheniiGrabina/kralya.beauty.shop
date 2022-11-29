@@ -67,21 +67,11 @@
   margin-top: 50px;
 }
 .new-shop-category,
-.new-shop-category{
+.new-products{
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-// .new-product-list,
-// .for-body-list,
-// .for-hair-list,
-// .for-lips-list,
-// .box-list,
-// .gifts-list,
-// .for-face-list{
- 
-//   }
-
 .new-shop-item {
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -173,7 +163,7 @@
 
 .product-subname{
     margin-bottom: 14px;
-line-height: 16px;
+    line-height: 16px;
     font-size: 20px;
     letter-spacing: 0.02em;
 }

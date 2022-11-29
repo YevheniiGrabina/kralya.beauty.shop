@@ -25,6 +25,9 @@ export const refs = {
     hair: document.querySelector('.js-nav-hair-btn'),
     box: document.querySelector('.js-nav-box-btn'),
     gifts: document.querySelector('.js-nav-gifts-btn'),
+    closeModalBtn: document.querySelector('.btn-close'),
+    modalBackdrop: document.querySelector('.backdrop'),
+    modal: document.querySelector('.product-modal'),
        
 }
 
