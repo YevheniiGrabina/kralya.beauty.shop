@@ -2,7 +2,9 @@ import './sass/main.scss';
 import './js/modal.js';
 import './js/mobile-menu';
 import './js/slider.js';
-import './js/products';
+import './js/product';
+import './js/simplebar';
+import './js/cart';
 
 
     import { refs } from './js/refs';

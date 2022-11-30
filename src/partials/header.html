@@ -34,14 +34,40 @@
             <img src="./images/logo.png" alt="Логотип" type="button" loading="lazy" class="logo-img">
             <img src="/src/images/kralya.png" alt="Логотип" type="button" loading="lazy" class="logo-text">
     </div>
-     <div class="basket-item "  type="button" data-modal-open>
+     <!-- <div class="basket-item "  type="button" data-modal-open>
         <button class="basket">
          <svg class="basket-icon" width="25px" height="25px">
            <use href="./images/icon.svg#icon-shopping-basket"></use>
          </svg>
         </button>
-      </div>
-      </div>
+      </div> -->
+      <div class="header__cart cart" tabindex="0">
+					<div class="cart__text">
+						Корзина
+						<span class="cart__quantity">0</span>
+					</div>
+					<div class="cart-content">
+						<ul class="cart-content__list" data-simplebar>
+              <!-- <li class="cart-content__item">
+								<article class="cart-content__product cart-product">
+									<img src="/src/images/logo.png" alt="" class="cart-product__img">
+									<div class="cart-product__text">
+										<h3 class="cart-product__title">Крэм</h3>
+										<span class="cart-product__price">100 грн</span>
+									</div>
+									<button class="cart-product__delete" aria-label="Удалить товар"></button>
+								</article>
+							</li> -->
+							
+						</ul>
+						<div class="cart-content__bottom">
+							<div class="cart-content__fullprice">
+								<span>Итого:</span>
+								<span class="fullprice">568 789 ₽</span>
+							</div>
+							<button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти в корзину</button>
+						</div>
+					</div>
             <div class="mobile-menu" data-menu>
             <button type="button" class="close" data-menu-close>
               <svg class="close__icon">
