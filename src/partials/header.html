@@ -18,79 +18,39 @@
       </div>
         <button class="burger" data-menu-open type="button">
             <svg class="burger__icon" width="16px" height="16px">
-              <use href="./images/icons.svg#icon-menu"></use>
+              <use href="./img/icons.svg#icon-menu"></use>
             </svg>
           </button>
            <form class="form">
          <div class="input-section">
         <input type="search" class="input-section__input" placeholder="Пошук..." value="">
-        <button class="form__btn btn js-form-btn" type="submit" aria-label="search films">
+        <button class="form__btn  js-form-btn" type="submit" aria-label="search films">
           <svg class="search-icon" width="12" height="12">
-            <use href="/src/images/search2.svg#icon-search"></use> 
+            <use href="./img/search2.svg#icon-search"></use> 
           </svg>
         </button>
     </form>
       <div class="logo">
-            <img src="./images/logo.png" alt="Логотип" type="button" loading="lazy" class="logo-img">
-            <img src="/src/images/kralya.png" alt="Логотип" type="button" loading="lazy" class="logo-text">
+            <img src="./img/logo.png" alt="Логотип" type="button" loading="lazy" class="logo-img">
+            <img src="./img/kralya.png" alt="Логотип" type="button" loading="lazy" class="logo-text">
     </div>
-     <!-- <div class="basket-item "  type="button" data-modal-open>
-        <button class="basket">
-         <svg class="basket-icon" width="25px" height="25px">
-           <use href="./images/icon.svg#icon-shopping-basket"></use>
-         </svg>
-        </button>
-      </div> -->
-      <div class="header__cart cart" tabindex="0">
+     	<div class="header__cart cart" tabindex="0">
 					<div class="cart__text">
-						Корзина
+						Кошик
 						<span class="cart__quantity">0</span>
 					</div>
 					<div class="cart-content">
 						<ul class="cart-content__list" data-simplebar>
-              <!-- <li class="cart-content__item">
-								<article class="cart-content__product cart-product">
-									<img src="/src/images/logo.png" alt="" class="cart-product__img">
-									<div class="cart-product__text">
-										<h3 class="cart-product__title">Крэм</h3>
-										<span class="cart-product__price">100 грн</span>
-									</div>
-									<button class="cart-product__delete" aria-label="Удалить товар"></button>
-								</article>
-							</li> -->
-							
 						</ul>
 						<div class="cart-content__bottom">
 							<div class="cart-content__fullprice">
 								<span>Итого:</span>
-								<span class="fullprice">568 789 ₽</span>
+								<span class="fullprice">0</span>
 							</div>
-							<button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти в корзину</button>
+							<button class="cart-content__btn btn" data-graph-path="modal" data-graph-animation="fadeInUp">Перейти до кошика</button>
 						</div>
 					</div>
-            <div class="mobile-menu" data-menu>
-            <button type="button" class="close" data-menu-close>
-              <svg class="close__icon">
-                <use href="./images/icons.svg#icon-close_menu"></use>
-              </svg>
-            </button>
-            <ul class="mobile-nav">
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="/"
-                  >Головна</a
-                >
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="/">Бренди</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="">Контакти</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="">Відгуки</a>
-              </li>
-            </ul>
-            </div>
+				</div>
   </header>
   <div class="nav-menu ">
     <ul class="nav-list container">
@@ -119,4 +79,51 @@
          <a class="nav-list__link" href="/">Відгуки</a>
      </li>
      </ul>
+   <div class="modal">
+		<div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+			<div class="modal-content order-modal__content">
+				<div class="order-modal__top">
+					<h2 class="order-modal__title">Оформлення замовлення</h2>
+					<span class="order-modal__number">Замовлення № </span>
+				</div>
+				<div class="order-modal__info">
+					<div class="order-modal__quantity order-modal__info-item">Товарів у замовленні: <span>3 шт</span></div>
+					<div class="order-modal__summ order-modal__info-item">Сума замовлення: <span>568 789 ₽</span></div>
+					<div class="order-modal__products order-modal__info-item">
+						<button class="order-modal__btn">Склад замовлення</button>
+						<ul class="order-modal__list">
+							<li class="order-modal__item">
+								<article class="order-modal__product order-product">
+									<img src="#" alt="" class="order-product__img">
+									<div class="order-product__text">
+										<h3 class="order-product__title"></h3>
+										<span class="order-product__price"></span>
+									</div>
+									<button class="order-product__delete">Видалити</button>
+								</article>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<form action="#" class="order-modal__form order">
+					<input type="hidden" name="theme" value="Зворотній дзвінок">
+					<input type="hidden" name="admin_email[]" value="jeygrabinaleo@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+					<label class="order__label">
+						<span class="order__text">Ваше ім'я</span>
+						<input type="text" name="Имя" class="order__input">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Номер телефону</span>
+						<input type="tel" name="Телефон" class="order__input" placeholder="+308(___)___-__-__">
+					</label>
+					<label class="order__label">
+						<span class="order__text">Електронна адреса</span>
+						<input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+					</label>
+					<button class="order__btn btn">Оформити замовлення</button>
+				</form>
+			</div>
+		</div>
+	</div>
    </div>

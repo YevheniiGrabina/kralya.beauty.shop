@@ -1,4 +1,4 @@
-<main class="main container">
+<main class="main content container">
   <!-- Категорії -->
   <div class="image-slider slider-container ">
     <div class="image-slider_wrapper swiper-wrapper">
@@ -6,7 +6,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn face js-nav-face-btn">
       <a class="shop-category__link" >
-        <img src="/src/images/face.jpg" alt="#"  class="main-images image-slider_image" />
+        <img src="./img/face.jpg" alt="#"  class="main-images image-slider_image" />
       <p class="shop-category__name"> Обличчя
       </p>
     </a>
@@ -17,7 +17,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn js-nav-body-btn body">
       <a class="shop-category__link" >
-        <img src="/src/images/body.jpg" alt="#"    class="main-images image-slider_image"/>
+        <img src="./img/body.jpg" alt="#"    class="main-images image-slider_image"/>
       <p class="shop-category__name"> Тіло
       </p>
     </a>
@@ -28,7 +28,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn js-nav-lips-btn lips">
       <a class="shop-category__link" >
-         <img src="/src/images/lips.jpg" alt="#"  class="main-images" />
+         <img src="./img/lips.jpg" alt="#"  class="main-images" />
       <p class="shop-category__name"> Губи
       </p>
     </a>
@@ -39,7 +39,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn js-nav-hair-btn hair">
       <a class="shop-category__link" >
-        <img src="/src/images/hair.jpg" alt="#"   class="main-images"/>
+        <img src="./img/hair.jpg" alt="#"   class="main-images"/>
       <p class="shop-category__name"> Волосся
       </p>
     </a>
@@ -50,7 +50,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn js-nav-box-btn box">
       <a class="shop-category__link" >
-         <img src="/src/images/box.jpg" alt="#"  class="main-images" />
+         <img src="./img/box.jpg" alt="#"  class="main-images" />
       <p class="shop-category__name"> Бокси
       </p>
     </a>
@@ -61,7 +61,7 @@
       <div class="image-slider_content">
     <button class="shop-category__btn js-nav-gifts-btn gifts">
       <a class="shop-category__link" >
-         <img src="/src/images/gifts.jpg" alt="#"  class="main-images"/>
+         <img src="./img/gifts.jpg" alt="#"  class="main-images"/>
       <p class="shop-category__name"> Сертифікати
       </p>
     </a>
@@ -75,14 +75,30 @@
 </div>
   <!-- Перехід по категоріям -->
 <h1 class="title lider-title">Популярні товари</h1>
-  <div class="shopping-item-wrapper new-shop-category">
-    <ul class="products-grid">
+ 	<div class="products-content grid-container">
+				<div class="filters">
+					<div class="filters__item filters-price">
+						<h3 class="filters-price__title">Ціна</h3>
+						<div class="filters-price__slider"></div>
+						<div class="filters-price__inputs">
+							<input type="text" class="filters-price__input">
+							<input type="text" class="filters-price__input">
+						</div>
+					</div>
+				</div>
+				<ul class="products-grid">
 					<li class="products-grid__item">
 						<article class="product">
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -91,21 +107,17 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
+								<span class="product__term"></span>
+								<span class="product__available"></span>
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">485 грн</span>
+								
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -113,7 +125,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -122,21 +140,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">466 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -144,7 +155,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -153,21 +170,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">785 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -175,7 +185,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -184,21 +200,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">434 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -206,7 +215,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -215,21 +230,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">134 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -237,7 +245,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -246,21 +260,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">689 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -268,7 +275,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -277,21 +290,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">345 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -299,7 +305,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -308,21 +320,14 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">456 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 					<li class="products-grid__item">
@@ -330,7 +335,13 @@
 							<a href="#" class="product__image">
 								<div class="product__switch image-switch">
 									<div class="image-switch__item">
-										<div class="image-switch__img"><img src="/src/images/logo.png" alt="Макбук"></div>
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
 									</div>
 								</div>
 								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
@@ -339,25 +350,18 @@
 								<a href="#">Какой то крэм</a>
 							</h3>
 							<div class="product__props">
-								<span class="product__rating">
-									<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M7.04894 0.92705C7.3483 0.00573924 8.6517 0.00573965 8.95106 0.92705L10.0206 4.21885C10.1545 4.63087 10.5385 4.90983 10.9717 4.90983H14.4329C15.4016 4.90983 15.8044 6.14945 15.0207 6.71885L12.2205 8.75329C11.87 9.00793 11.7234 9.4593 11.8572 9.87132L12.9268 13.1631C13.2261 14.0844 12.1717 14.8506 11.388 14.2812L8.58779 12.2467C8.2373 11.9921 7.7627 11.9921 7.41221 12.2467L4.61204 14.2812C3.82833 14.8506 2.77385 14.0844 3.0732 13.1631L4.14277 9.87132C4.27665 9.4593 4.12999 9.00793 3.7795 8.75329L0.979333 6.71885C0.195619 6.14945 0.598395 4.90983 1.56712 4.90983H5.02832C5.46154 4.90983 5.8455 4.63087 5.97937 4.21885L7.04894 0.92705Z" />
-									</svg>
-									4,5
-								</span>
 								<span class="product__testimonials">83 отзыва</span>
 							</div>
-							
-							<div class="product__price product-price">
-								<span class="product-price__current">500 Грн</span>
-								<span class="product-price__old">500 Грн</span>
+							<div class="product__info">
 							</div>
-							<button class="product__btn btn">Додати у кошик</button>
+							<div class="product__price product-price">
+								<span class="product-price__current">578 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
 						</article>
 					</li>
 				</ul>
-  </div>
+			</div>
   <div class="callback-section">
     <h2 class="callback-title">НЕ ЗНАЄШ ШО ОБРАТИ?</h2>
     <P class="callback-text">Залишай заявку прямо зараз і ми допоможемо Вам
@@ -366,44 +370,100 @@
   </div>   
   <h1 class="title new-title">Новинки</h1>  
   <div class="new-shop-category news">
-    <ul class="new-product-list">
-      <li class="new-shop-item">
-        <div>
-         <a href="/">
-             <img src="/src/images/logo.png" alt="#" >
-             </a>
-            </div>
-              <div class="product-info">
-             <h2 class="product-name">Lorem ipsum dolor  .</h2>
-              <p class="product-brand">Lorem ipsum dolor sit amet consectetur</p>
-              <p class="product-price">666.66</p>
-              
-                <!-- <button class="sale-btn">Додати у кошик</button> -->
-              
-         </div>
-     </li>
-     <li class="new-shop-item">
-      <a href="/">
-          <img src="/src/images/logo.png" alt="#" >
-          </a>
-           <div class="product-info">
-            <h2 class="product-name">Lorem ipsum dolor  .</h2>
-            <p class="product-brand">Lorem ipsum dolor sit amet consectetur</p>
-            <p class="product-price">666.66</p>
-           <!-- <button class="sale-btn">Додати у кошик</button> -->
-      </div>
-  </li> <li class="new-shop-item">
-    <a href="/">
-        <img src="/src/images/logo.png" alt="#" >
-        </a>
-         <div class="product-info">
-          <h2 class="product-name">Lorem ipsum dolor  .</h2>
-          <p class="product-brand">Lorem ipsum dolor sit amet consectetur</p>
-          <p class="product-price">666.66</p>
-         <button class="sale-btn" type="button">Додати у кошик</button>
-    </div>
-</li> 
-    </ul>
+   <ul class="products-grid">
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Какой то крэм</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__testimonials">83 отзыва</span>
+							</div>
+							<div class="product__info">
+								<span class="product__term"></span>
+								<span class="product__available"></span>
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">500 грн</span>
+								
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Какой то крэм</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__testimonials">83 отзыва</span>
+							</div>
+							<div class="product__info">
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">500 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
+						</article>
+					</li>
+					<li class="products-grid__item">
+						<article class="product">
+							<a href="#" class="product__image">
+								<div class="product__switch image-switch">
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-3.jpg" alt="Макбук"></div>
+									</div>
+									<div class="image-switch__item">
+										<div class="image-switch__img"><img src="./img/bilou-1.jpg" alt="Макбук"></div>
+									</div>
+								</div>
+								<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+							</a>
+							<h3 class="product__title">
+								<a href="#">Какой то крэм</a>
+							</h3>
+							<div class="product__props">
+								<span class="product__testimonials">83 отзыва</span>
+							</div>
+							<div class="product__info">
+							</div>
+							<div class="product__price product-price">
+								<span class="product-price__current">500 грн</span>
+							</div>
+							<button class="product__btn btn">Додати в кошик</button>
+						</article>
+					</li>
   </div>
   <!-- Перехід по категоріям -->
   <!-- Обличчя -->

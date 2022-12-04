@@ -1,21 +1,21 @@
 import './sass/main.scss';
-import './js/modal.js';
-import './js/mobile-menu';
-import './js/slider.js';
-import './js/product';
 import './js/simplebar';
+import './js/product';
+import './js/modal';
+import './js/mobile-menu';
+import './js/slider';
 import './js/cart';
 
 
     import { refs } from './js/refs';
 
 
-    import { onHairBtnClick } from './js/hairCategory';
-    import { onBoxBtnClick } from './js/boxCategory';
-    import { onGiftsBtnClick } from './js/giftsCategory';
-    import { onFaceBtnClick } from './js/renderFaceCategory';
-    import { onBodyBtnClick } from './js/renderBodyCategory';
-    import { onLipsBtnClick } from './js/renderLipsCategory';
+    import { onHairBtnClick } from './js/category/hairCategory';
+    import { onBoxBtnClick } from './js/category/boxCategory';
+    import { onGiftsBtnClick } from './js/category/giftsCategory';
+    import { onFaceBtnClick } from './js/category/renderFaceCategory';
+    import { onBodyBtnClick } from './js/category/renderBodyCategory';
+    import { onLipsBtnClick } from './js/category/renderLipsCategory';
     
 
 
