@@ -1,0 +1,2 @@
+var showMore=document.querySelector(".show-more"),productsLength=document.querySelectorAll(".products-grid__item").length,items=3;showMore.addEventListener("click",(function(){items+=3;var e=Array.from(document.querySelector(".products-grid").children).slice(0,items);e.forEach((function(e){return e.classList.add("is-visible")})),e.length===productsLength&&(showMore.style.display="none")}));
+//# sourceMappingURL=index.9bba746f.js.map
