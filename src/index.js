@@ -5,6 +5,7 @@ import './js/modal';
 import './js/mobile-menu';
 import './js/slider';
 import './js/cart';
+import './js/show-more';
 
 
     import { refs } from './js/refs';

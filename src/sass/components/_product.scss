@@ -170,3 +170,24 @@
 	opacity: 0.4;
 	pointer-events: none;
 }
+.btn-center {
+	grid-column: 1 / 4 span;
+	text-align: center;
+}
+.show-more{
+	    width: 300px;
+		padding: 14px 0;
+		border-radius: 55px;
+		color: #000;
+		border: 2px solid #ffffff;
+		background-color: #fff;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+}
+.products-grid__item:nth-child(n + 4) {
+	display: none;
+}
+
+.products-grid__item.is-visible {
+	display: block;
+}
