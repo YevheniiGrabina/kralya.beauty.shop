@@ -1,7 +1,8 @@
 
 .cart {
 	position: relative;
-	padding: 40px 19px;
+	padding:40px 19px ;
+	padding-left: 0;
 	transition: background-color 0.3s;
 }
 
@@ -12,7 +13,8 @@
 }
 
 .header__cart {
-	margin-left: 40px;
+	display: flex;
+	align-items: center;
 }
 
 .cart__quantity {

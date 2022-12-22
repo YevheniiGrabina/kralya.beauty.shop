@@ -173,9 +173,11 @@
 .btn-center {
 	grid-column: 1 / 4 span;
 	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .show-more{
-	    width: 300px;
+	    width: 130px;
 		padding: 14px 0;
 		border-radius: 55px;
 		color: #000;
@@ -184,7 +186,7 @@
 		cursor: pointer;
 		transition: background-color 0.3s ease-in-out;
 }
-.products-grid__item:nth-child(n + 4) {
+.products-grid__item:nth-child(n + 5) {
 	display: none;
 }
 
